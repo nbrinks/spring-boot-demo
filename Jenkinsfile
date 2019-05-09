@@ -11,5 +11,12 @@ pipeline {
         sh './gradlew check'
       }
     }
+    stage('SonarQube analysis') {
+      steps {
+        withSonarQubeEnv('sq-cloud') {
+          sh './gradle --info sonarqube'
+        }
+      }
+    }
   }
 }
