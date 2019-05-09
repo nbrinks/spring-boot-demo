@@ -14,7 +14,8 @@ pipeline {
     stage('SonarQube analysis') {
       steps {
         withSonarQubeEnv('sq-cloud') {
-          sh './gradle --info sonarqube'
+          sh 'printenv'
+          sh './gradlew --info sonarqube'
         }
       }
     }
