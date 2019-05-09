@@ -17,5 +17,4 @@ public class FooTest {
     Foo foo = new Foo("abc", "def");
     assertThat(foo.getBaz()).isEqualTo("def");
   }
-
 }
