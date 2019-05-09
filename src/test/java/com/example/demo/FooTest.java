@@ -11,4 +11,10 @@ public class FooTest {
     Foo foo = new Foo("abc", "def");
     assertThat(foo.getBar()).isEqualTo("abc");
   }
+
+  @Test
+  public void getBaz() {
+    Foo foo = new Foo("abc", "def");
+    assertThat(foo.getBaz()).isEqualTo("def");
+  }
 }
