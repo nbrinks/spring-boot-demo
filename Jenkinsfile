@@ -17,7 +17,7 @@ pipeline {
           sh 'printenv | sort'
           sh "./gradlew --info sonarqube " +
                   "-Dsonar.projectKey=nbrinks_spring-boot-demo " +
-                  "-Dsonar.oragnization=nbrinks-github " +
+                  "-Dsonar.organization=nbrinks-github " +
                   "-Dsonar.host.url=${env.SONAR_HOST_URL} " +
                   "-Dsonar.login=${env.SONAR_AUTH_TOKEN} " +
                   "-Dsonar.pullrequest.key=${env.CHANGE_ID} " +
