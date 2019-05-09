@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('Gradle Check') {
       steps {
         sh './gradlew check'
       }
