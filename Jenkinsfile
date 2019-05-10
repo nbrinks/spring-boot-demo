@@ -30,7 +30,7 @@ pipeline {
                         "-Dsonar.projectKey=nbrinks_spring-boot-demo " +
                         "-Dsonar.organization=nbrinks-github " +
                         "-Dsonar.host.url=https://sonarcloud.io " +
-                        "-Dsonar.login=5ba6947c30521e5a9d38530fd0c4317dbfab2004" +
+                        "-Dsonar.login=27c4844ef43c9d7af78720bd1cbac2f1852ece1e" +
                         "-Dsonar.pullrequest.key=${env.CHANGE_ID} " +
                         "-Dsonar.pullrequest.branch=${env.CHANGE_BRANCH} " +
                         "-Dsonar.pullrequest.base=${env.CHANGE_TARGET}"
